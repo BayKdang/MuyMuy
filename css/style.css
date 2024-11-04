@@ -1,0 +1,130 @@
+body {
+    background-color: #023E53;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Left-container {
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 100%),
+    url("/resource/img/login-image.jpg");
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 856px;
+    height: 559px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2.5px 2.5px 10px 0px black;
+}
+
+.Right-container {
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    width: 50%;
+}
+
+.header {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #07475D;
+}
+
+.nav {
+    font-size: 31px;
+    color: #07475D;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 42px;
+}
+
+.login {
+    border-right: 2px solid #07475D;
+    height: 40px;
+    padding-right: 16px;
+}
+
+.register {
+    padding-left: 16px;
+}
+
+.input input{
+    font-family: "Manrope", sans-serif;
+    width: 324px;
+    height: 43px;
+    border: 1px solid #B6B6B6;
+    border-radius: 10px;
+}
+
+#username {
+    padding-left: 10px;
+    margin-bottom: 35px;
+}
+
+#password {
+    padding-left: 10px;
+    margin-bottom: 18px;
+}
+
+.checkbox-container { 
+    color: #07475D;;
+    font-family: "Manrope", sans-serif;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.forgot-pw {
+    margin-left: 70px;
+}
+
+button {
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    margin-top: 23px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    background-color: #07475D;
+    color: white;
+    border: 0px;
+    width: 166px;
+    height: 42px;
+}
+
+.other-container {
+    display: flex;
+}
+
+.Other {
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    color: #999191;
+}
+
+hr {
+    width: 30%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.other-sign img{
+    width: 30px;
+    padding: 20px 20px 0px 20px;
+}
