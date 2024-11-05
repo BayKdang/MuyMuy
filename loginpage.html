@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login/Register</title>
+    <script src="javascript/login.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="resource/img/dogefavicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,21 +19,21 @@
         <div class="card">
             <div class="Left-container">
             </div>
-            <div class="Right-container">
+            <div id="login" class="Right-container">
                 <h1 class="header">MuYMuY</h1>
                 <div class="nav">
-                    <nav class="login">Login</nav>
-                    <nav class="register">Register</nav>
+                    <nav class="login"><a href="#login" onclick="toggleForm('login')">Login</a></nav>
+                    <nav class="register"><a href="#register" onclick="toggleForm('register')">Register</a></nav>
                 </div>
-                <form>
+                <form class="Login-container">
                     <div class="input">
-                        <input type="text" name="username" id="username" placeholder="Enter Username/Email Address">
-                        <input type="password" name="password" id="password" placeholder="Enter Password">
+                        <input type="text" name="username" id="username"  placeholder="Enter Username/Email Address" required>
+                        <input type="password" name="password" id="password" placeholder="Enter Password" required>
                     </div>
                     <div class="checkbox-container">
                         <input class="checkbox" type="checkbox" name="remember" id="remember">
                         <label for="remember">Remember me</label>
-                        <label class="forgot-pw">Forgot Password?</label>
+                        <label class="forgot-pw"><a href="#" onclick="toggleForm('forgot-pw')">Forgot Password?</a></label>
                     </div>
                     <button type="submit">Sign in</button>
                     <div class="other-container">
@@ -41,9 +42,65 @@
                         <hr>
                     </div>
                     <div class="other-sign">
-                        <img src="/resource/img/facebook.png" alt="facebook">
-                        <img src="/resource/img/google.png" alt="google">
-                        <img src="/resource/img/github.png" alt="twitter">
+                        <a href="https://www.facebook.com"><img src="resource/img/facebook.png" alt="facebook"></a>
+                        <a href="https://www.google.com"><img src="resource/img/google.png" alt="google"></a>
+                        <a href="https://www.github.com"><img src="resource/img/github.png" alt="twitter"></a>
+                    </div>
+                </form>
+            </div>
+
+            <div id="register" class="Right-container" hidden>
+                <h1 class="header">MuYMuY</h1>
+                <div class="nav2">
+                    <nav class="login"><a href="#login" onclick="toggleForm('login')">Login</a></nav>
+                    <nav class="register"><a href="#register" onclick="toggleForm('register')">Register</a></nav>
+                </div>
+                <form class="Register-container">
+                    <div class="register-input">
+                        <input type="email" id="register-email" placeholder="Enter Email Address" required>
+                        <input type="text" id="register-username" placeholder="Enter Username" required>
+                        <input type="text" id="register-firstname" placeholder="Enter First Name" required>
+                        <input type="text" id="register-lastname" placeholder="Enter Last Name" required>
+                    </div>
+                    <button class="register-next" onclick="toggleForm('register-next')">Next</button>
+                </form>
+            </div>
+
+            <div id="register-next" class="Right-container" hidden>
+                <h1 class="header">MuYMuY</h1>
+                <div class="nav2">
+                    <nav class="login"><a href="#login" onclick="toggleForm('login')">Login</a></nav>
+                    <nav class="register"><a href="#register" onclick="toggleForm('register')">Register</a></nav>
+                </div>
+                <form class="Register-container">
+                    <div class="register-input">
+                        <input type="password" placeholder="Enter Password" required>
+                        <div class="verification">
+                            <input type="text" id="verification-code" placeholder="Verification Code" required>
+                            <button>Send</button>
+                        </div>
+                        <button>Register</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="forgot-pw" class="Right-container" hidden>
+                <h1 class="header">MuYMuY</h1>
+                <div class="Forgot">
+                    <label class="forgot-title">Forgot Password?</label>
+                </div>
+                <form class="Forgot-container">
+                    <div class="input">
+                        <input type="email" id="email" placeholder="Enter Email Address" required>
+                        <input type="password" id="password" placeholder="Enter new Password" required>
+                        <div class="verification">
+                            <input type="text" id="verification-code" placeholder="Verification Code" required>
+                            <button>Send</button>
+                        </div>
+                        <button class="Send">Send</button>
+                        <div>
+                            <label class="Back-login"><a href="#" onclick="toggleForm('login')">Back to Login</a></label>
+                        </div>
                     </div>
                 </form>
             </div>
