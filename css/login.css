@@ -20,7 +20,7 @@ body {
     url("/resource/img/login-image.jpg");
 }
 
-@media only screen and (min-width: 310px) and (max-width:390px){
+@media only screen and (min-width: 310px) and (max-width:399px){
     
     /* Left container for image */
 
@@ -58,7 +58,7 @@ body {
         display: flex;
         flex-direction: row;
         margin-top: 40px;
-        margin-bottom: 42px;
+        margin-bottom: 35px;
         text-decoration: none;
     }
 
@@ -176,6 +176,17 @@ body {
         padding: 0;
     }
 
+    .back-homepage {
+        text-decoration: none;
+        color: #07475D;
+        font-size: 10px;
+    }
+    
+    .back-homepage:hover {
+        border-bottom: 1.5px solid #07475D;
+        transition: 0.05s ease;
+    }
+
     /* For Register Form */
 
     .register-input input {
@@ -185,7 +196,7 @@ body {
         height: 25px;
         border: 1px solid #B6B6B6;
         border-radius: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         padding-left: 10px;
     }
 
@@ -390,6 +401,7 @@ body {
         border: 1px solid #07475D;
         color:#07475D;
     }
+    
 
     .other-container {
         display: flex;
@@ -416,7 +428,19 @@ body {
 
     .other-sign img{
         width: 25px;
+        margin-bottom: 15px;
         padding: 0;
+    }
+
+    .back-homepage {
+        text-decoration: none;
+        color: #07475D;;
+        font-size: 13px;
+    }
+    
+    .back-homepage:hover {
+        border-bottom: 1.5px solid #07475D;
+        transition: 0.05s ease;
     }
 
     /* For Register Form */
@@ -544,7 +568,7 @@ body {
         display: flex;
         flex-direction: row;
         margin-top: 40px;
-        margin-bottom: 42px;
+        margin-bottom: 30px;
         text-decoration: none;
     }
 
@@ -592,7 +616,7 @@ body {
         font-size: 14px;
         display: flex;
         flex-direction: row;
-        margin-left: 35px;
+        margin-left: 10px;
     }
 
     .forgot-pw {
@@ -630,7 +654,7 @@ body {
 
     .other-container {
         display: flex;
-        margin-bottom: 22px;
+        margin-bottom: 10px;
     }
 
     .Other {
@@ -652,7 +676,19 @@ body {
 
     .other-sign img{
         width: 30px;
+        margin-bottom: 15px;
         padding: 0;
+    }
+
+    .back-homepage {
+        text-decoration: none;
+        color: #07475D;
+        font-size: 14px;
+    }
+    
+    .back-homepage:hover {
+        border-bottom: 1.5px solid #07475D;
+        transition: 0.05s ease;
     }
 
     /* For Register Form */
@@ -777,7 +813,7 @@ body {
         display: flex;
         flex-direction: row;
         margin-top: 40px;
-        margin-bottom: 42px;
+        margin-bottom: 30px;
         text-decoration: none;
     }
 
@@ -885,7 +921,18 @@ body {
 
     .other-sign img{
         width: 30px;
+        margin-bottom: 15px;
         padding: 0;
+    }
+
+    .back-homepage {
+        text-decoration: none;
+        color: #07475D;
+    }
+    
+    .back-homepage:hover {
+        border-bottom: 1.5px solid #07475D;
+        transition: 0.05s ease;
     }
 
     /* For Register Form */
