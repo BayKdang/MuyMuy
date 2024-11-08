@@ -19,10 +19,12 @@ function toggleForm(form) {
         registerNav.style.borderBottom = '2.5px solid #07475D'; 
         loginNav.style.borderBottom = 'none';
     }else if (form === 'forgot-pw') {
-        loginForm.style.display = 'none';
-        registerForm.style.display = 'none'
-        registerForm2.style.display = 'none';
         forgotForm.style.display = 'block'
+<<<<<<< HEAD
+=======
+        loginForm.style.display = 'none';
+        registerForm.style.display = 'none';
+>>>>>>> 578c43e4cd51bcbbdf08f078cbd3240353726e06
     }else if (form === 'register-next') {
         // Validate the registration form before transitioning to next step
         const registerFormInputs = document.querySelectorAll('#register input');
