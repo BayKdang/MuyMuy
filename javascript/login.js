@@ -23,8 +23,19 @@ function toggleForm(form) {
         loginForm.style.display = 'none';
         registerForm.style.display = 'none';
     }else if (form === 'register-next') {
-        loginForm.style.display = 'none';
-        registerForm.style.display = 'none'
-        registerForm2.style.display = 'block';
+        // Validate the registration form before transitioning to next step
+        const registerFormInputs = document.querySelectorAll('#register input');
+        let isValid = true;
+        
+        // Loop through all input fields and check if they are valid
+        registerFormInputs.forEach(input => {
+            if (!input.checkValidity()) {
+                isValid = false;
+                input.reportValidity(); // Show browser validation messages
+            }else if (isValid) {
+                registerForm.style.display = 'none';
+                registerForm2.style.display = 'block';
+            }
+        });
     }
 }
