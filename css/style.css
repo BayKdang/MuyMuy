@@ -138,6 +138,7 @@ button:hover {
     background-color: white;
     border: 1px solid #07475D;
     color:#07475D;
+    transition: ease 0.3s;
 }
 
 .other-container {
