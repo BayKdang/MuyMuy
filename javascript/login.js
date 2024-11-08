@@ -19,10 +19,9 @@ function toggleForm(form) {
         registerNav.style.borderBottom = '2.5px solid #07475D'; 
         loginNav.style.borderBottom = 'none';
     }else if (form === 'forgot-pw') {
-        loginForm.style.display = 'none';
-        registerForm.style.display = 'none'
-        registerForm2.style.display = 'none';
         forgotForm.style.display = 'block'
+        loginForm.style.display = 'none';
+        registerForm.style.display = 'none';
     }else if (form === 'register-next') {
         loginForm.style.display = 'none';
         registerForm.style.display = 'none'
