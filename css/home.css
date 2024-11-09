@@ -300,6 +300,7 @@ body {
     width: 152px;
     height: 52px;
     align-items: center;
+    justify-content: center;
 }
 .explore-button:hover{
     background-color: #c6f0ff;
