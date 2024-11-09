@@ -422,13 +422,16 @@ body {
         align-items: center;
     }
 
+    .other-sign {
+        margin-bottom: 15px;
+    }
+
     .other-sign a {
         margin: 10px;
     }
 
     .other-sign img{
         width: 25px;
-        margin-bottom: 15px;
         padding: 0;
     }
 
@@ -670,13 +673,16 @@ body {
         align-items: center;
     }
 
+    .other-sign {
+        margin-bottom: 15px;
+    }
+
     .other-sign a {
         margin: 20px;
     }
 
     .other-sign img{
         width: 30px;
-        margin-bottom: 15px;
         padding: 0;
     }
 
@@ -775,7 +781,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 1024px){
 
     /* Left container for image */
     
@@ -915,13 +921,16 @@ body {
         align-items: center;
     }
 
+    .other-sign {
+        margin-bottom: 15px;
+    }
+
     .other-sign a {
         margin: 20px;
     }
 
     .other-sign img{
         width: 30px;
-        margin-bottom: 15px;
         padding: 0;
     }
 
