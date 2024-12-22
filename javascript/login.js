@@ -5,7 +5,7 @@ function toggleForm(form) {
     const forgotForm = document.getElementById('forgot-pw');
     const loginNav = document.querySelector('.nav .login a');
     const registerNav = document.querySelector('.nav .register a');
-
+    
     if (form === 'login') {
         loginForm.style.display = 'block';
         registerForm.style.display = 'none';
